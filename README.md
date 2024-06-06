@@ -61,7 +61,8 @@ The following are external resources that you can use to learn more:
 
 <summary>Core Concepts</summary>
 
-### Theme Structure
+### [Theme Structure](https://developer.wordpress.org/themes/core-concepts/theme-structure/)
+ 
 
 WordPress themes are nothing more than a collection of various files that rely on different web technologies, such as HTML, CSS, and PHP.
 
@@ -87,5 +88,26 @@ styles/
   - style.css (required)
   - theme.json
 
+### [Main Stylesheet (style.css)](https://developer.wordpress.org/themes/core-concepts/main-stylesheet/)
+
+WordPress requires that all themes include a style.css file. Its most important function is to “register” the theme with WordPress through configuration data at the top of the file. Many themes also use it to serve CSS to the front-end (and even the editor)
+
+WordPress would look for your theme’s style.css in the following location:
+
+- wp-content/
+  - themes/
+    - My_WordPress_themes/
+      - style.css
+
+For WordPress to recognize your theme, you would at least need the Theme Name field defined at the top of style.css like so:
+
+```css
+/**
+ * Theme Name: Fabled Sunset
+ */
+
+```
+
+This is the minimum required header field for a valid theme.
 
 </details>
