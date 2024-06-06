@@ -9,7 +9,7 @@ In essence, what you see when viewing the front-end of your site is shaped by th
 
 ## Theme types
 
-WordPress supports two primary types of themes: [block](https://github.com/FlowExtractAPI/Wordpress-Theme/edit/main/README.md#block-themes) and [classic](https://github.com/FlowExtractAPI/Wordpress-Theme/edit/main/README.md#classic-themes)
+WordPress supports two primary types of themes: [block](https://github.com/FlowExtractAPI/Wordpress-Theme?tab=readme-ov-file#block-themes) and [classic](https://github.com/FlowExtractAPI/Wordpress-Theme?tab=readme-ov-file#theme-types)
 .
 There is also a classic subtype that is called a hybrid theme
 
