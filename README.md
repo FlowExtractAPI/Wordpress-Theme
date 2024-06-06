@@ -7,7 +7,9 @@ Join me on a journey to master WordPress theme development from the ground up.
 A WordPress theme represents the design of your website. It can control everything from colors to fonts, to the entire layout.
 In essence, what you see when viewing the front-end of your site is shaped by the theme.
 
-## Theme types
+<details>
+
+<summary>Theme types</summary>
 
 WordPress supports two primary types of themes: [block](https://github.com/FlowExtractAPI/Wordpress-Theme?tab=readme-ov-file#block-themes) and [classic](https://github.com/FlowExtractAPI/Wordpress-Theme?tab=readme-ov-file#theme-types)
 .
@@ -15,8 +17,10 @@ There is also a classic subtype that is called a hybrid theme
 
 ### Block themes
 
-Block themes utilize HTML-based block templates containing block markup. 
+Block themes utilize HTML-based block templates containing block markup.
+
 Both creators and users can make edits to the templates in the Site Editor.
+
 Users have the capability to customize global settings and styles defined by the theme’s theme.json file through the Styles interface. Additionally, it is entirely feasible to export a theme directly from the Site Editor without any need to modify the code. While creating a new theme from scratch within the editor is technically not possible, it is feasible to adapt the templates and styles of an existing theme to craft a custom theme.
 
 ### Classic themes
@@ -29,22 +33,25 @@ Hybrid themes are merely classic themes that have adopted some modern block-rela
 ### What are themes made of?
 Themes can include many different folders and file types. The list below is non-exhaustive, but it includes some common things you might see:
 
-Templates (.html in block themes and .php in classic themes)
-CSS Stylesheets
-JavaScript
-PHP
-Media (images, audio, video, etc.)
-JSON
+- Templates (.html in block themes and .php in classic themes)
+- CSS Stylesheets
+- JavaScript
+- PHP
+- Media (images, audio, video, etc.)
+-JSON
 
 ### Requirements
 
-You can create a theme with no coding knowledge. But you will find it much easier to familiarize yourself with a few web languages. 
+You can create a theme with no coding knowledge. But you will find it much easier to familiarize yourself with a few web languages.
+
 You will see HTML, CSS, PHP, JSON, and JavaScript within the handbook, so it helps to be able to easily recognize what language you are looking at. HTML and CSS are foundational pieces of the web, so those should be prioritized over others. 
 
 The following are external resources that you can use to learn more:
 
-[MDN Web Docs: HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).
-[MDN Web Docs: CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
-[PHP official documentation](https://www.php.net/docs.php).
-[MDN Web Docs: JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON).
-[MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript).
+- [MDN Web Docs: HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).
+- [MDN Web Docs: CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
+- [PHP official documentation](https://www.php.net/docs.php).
+- [MDN Web Docs: JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON).
+- [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript).
+
+</details>
