@@ -1,2 +1,2 @@
-# Wordpress-Theme
-tutorial to learn WordPress theme from scratch
+# WordPress Theme Tutorial
+Join me on a journey to master WordPress theme development from the ground up.
