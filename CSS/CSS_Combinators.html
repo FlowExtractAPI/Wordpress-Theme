@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style id="dynamic-style">
+      div p {
+        background-color: rgb(255, 255, 255);
+      }
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank"
+      ><h2>CSS Combinators</h2></a
+    >
+
+    <form id="symbol-form">
+      <label for="symbol">Enter the symbol ( >, , +, ~):</label>
+      <input type="text" id="symbol" name="symbol" maxlength="1" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      0 The descendant selector matches all elements that are descendants of a
+      specified element.
+    </p>
+
+    <div>
+      <p>1 descendant selector ( ) and Child Selector (>) in the div</p>
+      <p>2 descendant selector ( ) and Child Selector (>) in the div</p>
+      <section>
+        <p>
+          3 descendant selector ( ) in the &#60;div&gt; &rarr; &#60;section&gt;
+        </p>
+      </section>
+      <p>4 descendant selector ( ) and Child Selector (>) in the div</p>
+    </div>
+
+    <p>
+      5 The general sibling selector (~) and Adjacent Sibling Selector (+) After
+      a div step 1
+    </p>
+    <p>6 The general sibling selector (~) After a div step 2</p>
+    <p>7 The general sibling selector (~) After a div step 3</p>
+
+    <script>
+      document
+        .getElementById("symbol-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+          const symbol = document.getElementById("symbol").value;
+
+          if ([">", " ", "+", "~"].includes(symbol)) {
+            const style = document.getElementById("dynamic-style");
+            let cssRule;
+
+            switch (symbol) {
+              case ">":
+                cssRule = "div > p";
+                break;
+              case " ":
+                cssRule = "div p";
+                break;
+              case "+":
+                cssRule = "div + p";
+                break;
+              case "~":
+                cssRule = "div ~ p";
+                break;
+            }
+
+            // Update the CSS rule inside the style element
+            style.innerHTML = `
+            ${cssRule} {
+              background-color:  rgb(255, 208, 0);
+            }
+            a:link {
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }
+          `;
+
+            // Optional: Log the change to the console
+            console.log(`CSS rule changed to ${cssRule}`);
+          } else {
+            alert("Please enter a valid symbol ( >,  , +, ~ )");
+          }
+        });
+    </script>
+  </body>
+</html>
